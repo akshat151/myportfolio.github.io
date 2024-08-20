@@ -825,3 +825,66 @@ section .row span {
   color: #00ff00;
   margin-top: 1rem;
 }
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 90%;
+  max-width: 900px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #36d1dc;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-block {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #36d1dc;
+}
+
+.timeline-block:nth-child(odd) .timeline-content {
+  left: 0;
+}
+
+.timeline-block:nth-child(even) .timeline-content {
+  left: 55%;
+}
+
+.timeline-block:nth-child(even) .timeline-content::after,
+.timeline-block:nth-child(odd) .timeline-content::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #36d1dc;
+  border-radius: 50%;
+  top: 20px;
+  left: -5px;
+}
+
+.timeline-block:nth-child(even) .timeline-content::after {
+  left: auto;
+  right: -5px;
+}

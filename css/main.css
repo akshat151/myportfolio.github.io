@@ -889,14 +889,15 @@ section .row span {
   left: auto;
   right: -5px;
 }
+
 .education-section {
   margin-top: 2rem;
 }
 
 .education-section h3 {
-  font-size: 2.2rem;
+  font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .education-section p {

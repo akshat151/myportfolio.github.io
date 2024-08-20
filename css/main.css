@@ -832,6 +832,7 @@ section .row span {
   padding: 20px 0;
   width: 90%;
   max-width: 900px;
+  margin-bottom: 10rem;
 }
 
 .timeline::before {
